@@ -30,9 +30,9 @@ ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
 
-#ynh_config_add_systemd
+ynh_config_add_systemd
 
-#yunohost service add "$app" --description="Manage and promote voluntary work in associations" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Manage and promote voluntary work in associations" --log="/var/log/$app/$app.log"
 
 #=================================================
 # INSTALL THE APP
@@ -42,6 +42,7 @@ ynh_script_progression "Installing $app..."
 pushd $install_dir
     python3 -m venv $install_dir/venv
     ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary 
+    ynh_hide_warnings $install_dir/venv/bin/pip install django-environ
     ynh_hide_warnings make init
 popd
 
@@ -50,7 +51,7 @@ popd
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-#ynh_systemctl --service="$app" --action="start"
+ynh_systemctl --service="$app" --action="start"
 
 #=================================================
 # END OF SCRIPT
