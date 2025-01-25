@@ -1,6 +1,6 @@
 [Unit]
 Description=Bénévalibre
-After=network.target postgresql.service
+After=network.target
 
 [Service]
 Type=simple
@@ -8,8 +8,6 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/manage.py runserver 127.0.0.1:__PORT__
-#StandardOutput=append:/var/log/__APP__/__APP__.log
-#StandardError=inherit
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these

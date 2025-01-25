@@ -42,7 +42,6 @@ ynh_script_progression "Installing $app..."
 pushd $install_dir
     python3 -m venv $install_dir/venv
     ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary 
-    ynh_hide_warnings $install_dir/venv/bin/pip install django-environ
     ynh_hide_warnings make init
 popd
 
