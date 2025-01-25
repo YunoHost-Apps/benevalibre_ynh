@@ -1,0 +1,65 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "benevalibre"
+name = "Bénévalibre"
+description.en = "Makes it easier to manage and promote voluntary work in associations"
+description.fr = "Facilite la gestion et la valorisation du bénévolat dans les associations"
+
+version = "1.6.2~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://benevalibre.org/"
+demo = "https://demo.example.com"
+userdoc = "https://benevalibre.org/site/tutoriel-benevole/"
+code = "https://some.forge.com/example/example"
+
+[integration]
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v1.6.2.tar.gz"
+    sha256 = "77df61be1512aa359291bc657523c0aff18f4384e7da825a9ee0483aa7842feb"
+
+    # autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "postgresql, postgresql-contrib, make, python3-dev, python3-venv, python3, python3-psycopg2"
+
+    [resources.database]
+    type = "postgresql"
