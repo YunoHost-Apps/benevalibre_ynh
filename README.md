@@ -20,8 +20,9 @@ It shall NOT be edited by hand.
 
 Bénévalibre is an open-source software package that makes it easier for voluntary organisations to manage and promote volunteer work.
 
-
 **Shipped version:** 1.6.2~ynh1
+
+**Demo:** <https://demo.example.com>
 
 ## Screenshots
 
