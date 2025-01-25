@@ -33,7 +33,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Manage and promote voluntary work in associations" --log="/var/log/$app/$app.log"
 
 #=================================================
 # INSTALL THE APP
