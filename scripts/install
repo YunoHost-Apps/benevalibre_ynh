@@ -10,7 +10,7 @@ source /usr/share/yunohost/helpers
 key=$(ynh_string_random --length=45 | base64)
 ynh_app_setting_set --key=key --value="$key"
 
-association_registration=on
+association_registration_open=on
 ynh_app_setting_set --key=association_registration --value="$association_registration"
 
 association_registration_moderated=off

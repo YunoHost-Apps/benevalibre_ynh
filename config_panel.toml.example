@@ -9,7 +9,7 @@ services = ["__APP__"]
     name.en = "Configuration Options"
     name.fr = "Options de configuration"
 
-        [main.config.association_registration]
+        [main.config.association_registration_open]
         ask.en = "Enable registration"
         ask.fr = "Activer l'enregistrement"
         type = "boolean"
