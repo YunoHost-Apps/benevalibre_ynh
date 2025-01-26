@@ -25,7 +25,7 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 
 ## Capturas
 
-![Captura de Bénévalibre](./doc/screenshots/example.jpg)
+![Captura de Bénévalibre](./doc/screenshots/screenshot.png)
 
 ## Documentaciones y recursos
 

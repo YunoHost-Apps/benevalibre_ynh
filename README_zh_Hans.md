@@ -25,7 +25,7 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 
 ## 截图
 
-![Bénévalibre 的截图](./doc/screenshots/example.jpg)
+![Bénévalibre 的截图](./doc/screenshots/screenshot.png)
 
 ## 文档与资源
 

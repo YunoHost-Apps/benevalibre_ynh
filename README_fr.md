@@ -25,7 +25,7 @@ Bénévalibre est un logiciel libre qui facilite la gestion et la valorisation d
 
 ## Captures d’écran
 
-![Capture d’écran de Bénévalibre](./doc/screenshots/example.jpg)
+![Capture d’écran de Bénévalibre](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
