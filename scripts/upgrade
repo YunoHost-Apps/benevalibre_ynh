@@ -41,7 +41,9 @@ yunohost service add "$app" --description="Manage and promote voluntary work in 
 ynh_script_progression "Installing $app..."
 
 pushd "$install_dir"
- 	make update
+    python3 -m venv $install_dir/venv
+    ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary 
+    ynh_hide_warnings make update
 popd
 
 chown -R $app:www-data "$install_dir"
