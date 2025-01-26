@@ -1,0 +1,30 @@
+version = "1.0"
+
+[main]
+name.en = "Bénévalibre configuration"
+name.fr = "Configuration de Bénévalibre"
+services = ["__APP__"]
+
+    [main.config]
+    name.en = "Configuration Options"
+    name.fr = "Options de configuration"
+
+        [main.config.association_registration]
+        ask.en = "Enable registration"
+        ask.fr = "Activer l'enregistrement"
+        type = "boolean"
+        yes = "on"
+        no = "off"
+        help.en = "Whether registration by users of new associations is currently permitted."
+        help.fr = "Si l'enregistrement de nouvelles associations par les utilisateurs est actuellement autorisé."
+        bind = "ASSOCIATION_REGISTRATION_OPEN:__INSTALL_DIR__/config.env"
+
+        [main.config.association_registration_moderated]
+        ask.en = "Activate validation by administrator"
+        ask.fr = "Activer validation par l'administrateur"
+        type = "boolean"
+        yes = "on"
+        no = "off"
+        help.en = "Whether newly registered associations must be approved and enabled by administrators."
+        help.fr = "si les associations nouvellement enregistrées doivent être approuvées et activées par les administrateurs."
+        bind = "ASSOCIATION_REGISTRATION_MODERATED:__INSTALL_DIR__/config.env"
