@@ -23,6 +23,8 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 
 **Поставляемая версия:** 1.6.2~ynh1
 
+**Демо-версия:** <https://benevalibre.sloli.fr/>
+
 ## Снимки экрана
 
 ![Снимок экрана Bénévalibre](./doc/screenshots/screenshot.png)
@@ -30,7 +32,8 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 ## Документация и ресурсы
 
 - Официальный веб-сайт приложения: <https://benevalibre.org/>
-- Официальная документация пользователя: <https://benevalibre.org/site/tutoriel-benevole/>
+- Официальная документация пользователя: <https://app.benevalibre.org/docs/utilisation/index.html>
+- Официальная документация администратора: <https://app.benevalibre.org/docs/administration/index.html>
 - Репозиторий кода главной ветки приложения: <https://forge.cliss21.org/cliss21/benevalibre>
 - Магазин YunoHost: <https://apps.yunohost.org/app/benevalibre>
 - Сообщите об ошибке: <https://github.com/YunoHost-Apps/benevalibre_ynh/issues>
