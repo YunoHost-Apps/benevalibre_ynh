@@ -16,7 +16,7 @@ services = ["__APP__"]
         yes = "on"
         no = "off"
         help.en = "Whether registration by users of new associations is currently permitted."
-        help.fr = "Si l'enregistrement de nouvelles associations par les utilisateurs est actuellement autorisé."
+        help.fr = "L'enregistrement de nouvelles associations par les utilisateurs est-il actuellement autorisé ?"
         bind = "ASSOCIATION_REGISTRATION_OPEN:__INSTALL_DIR__/config.env"
 
         [main.config.association_registration_moderated]
@@ -26,5 +26,5 @@ services = ["__APP__"]
         yes = "on"
         no = "off"
         help.en = "Whether newly registered associations must be approved and enabled by administrators."
-        help.fr = "si les associations nouvellement enregistrées doivent être approuvées et activées par les administrateurs."
+        help.fr = "Les associations nouvellement enregistrées doivent-elles être approuvées et activées par les administrateurs ?"
         bind = "ASSOCIATION_REGISTRATION_MODERATED:__INSTALL_DIR__/config.env"
