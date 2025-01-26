@@ -14,7 +14,9 @@ maintainers = ["eric_G"]
 [upstream]
 license = "AGPL-3.0-only"
 website = "https://benevalibre.org/"
-userdoc = "https://benevalibre.org/site/tutoriel-benevole/"
+demo = "https://benevalibre.sloli.fr/"
+admindoc = "https://app.benevalibre.org/docs/administration/index.html"
+userdoc = "https://app.benevalibre.org/docs/utilisation/index.html"
 code = "https://forge.cliss21.org/cliss21/benevalibre"
 
 [integration]

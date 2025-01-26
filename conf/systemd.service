@@ -1,5 +1,5 @@
 [Unit]
-Description=Bénévalibre
+Description=Bénévalibre: Manage and promote voluntary work in associations
 After=network.target
 
 [Service]
@@ -8,6 +8,7 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/venv/bin/python manage.py runserver 127.0.0.1:__PORT__
+Restart=on-failure
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
