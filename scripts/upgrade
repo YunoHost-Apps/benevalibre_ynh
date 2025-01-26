@@ -20,9 +20,9 @@ ynh_setup_source --dest_dir="$install_dir" --keep="config.env" #--full_replace
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Updating $app's configuration files..."
+#ynh_script_progression "Updating $app's configuration files..."
 
-ynh_config_add --template="config.env.example" --destination="$install_dir/config.env"
+#ynh_config_add --template="config.env.example" --destination="$install_dir/config.env"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
