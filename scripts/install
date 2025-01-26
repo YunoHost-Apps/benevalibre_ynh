@@ -45,6 +45,8 @@ pushd $install_dir
     ynh_hide_warnings make init
 popd
 
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================

@@ -44,6 +44,8 @@ pushd "$install_dir"
  	make update
 popd
 
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
