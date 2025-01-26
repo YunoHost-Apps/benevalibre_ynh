@@ -23,6 +23,8 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 
 **Versi terkirim:** 1.6.2~ynh1
 
+**Demo:** <https://benevalibre.sloli.fr/>
+
 ## Tangkapan Layar
 
 ![Tangkapan Layar pada Bénévalibre](./doc/screenshots/screenshot.png)
@@ -30,7 +32,8 @@ Bénévalibre is an open-source software package that makes it easier for volunt
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://benevalibre.org/>
-- Dokumentasi pengguna resmi: <https://benevalibre.org/site/tutoriel-benevole/>
+- Dokumentasi pengguna resmi: <https://app.benevalibre.org/docs/utilisation/index.html>
+- Dokumentasi admin resmi: <https://app.benevalibre.org/docs/administration/index.html>
 - Depot kode aplikasi hulu: <https://forge.cliss21.org/cliss21/benevalibre>
 - Gudang YunoHost: <https://apps.yunohost.org/app/benevalibre>
 - Laporkan bug: <https://github.com/YunoHost-Apps/benevalibre_ynh/issues>
