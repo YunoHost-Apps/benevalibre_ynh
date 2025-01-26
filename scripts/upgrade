@@ -8,7 +8,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Ensuring downward compatibility..."
 
-ynh_app_setting_set --key=association_registration --value=on
+ynh_app_setting_set --key=association_registration_open --value=on
 ynh_app_setting_set --key=association_registration_moderated --value=off
 
 #=================================================
