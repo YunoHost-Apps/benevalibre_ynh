@@ -14,9 +14,8 @@ maintainers = ["eric_G"]
 [upstream]
 license = "AGPL-3.0-only"
 website = "https://benevalibre.org/"
-demo = "https://demo.example.com"
 userdoc = "https://benevalibre.org/site/tutoriel-benevole/"
-code = "https://some.forge.com/example/example"
+code = "https://forge.cliss21.org/cliss21/benevalibre"
 
 [integration]
 yunohost = ">= 12.0.9"
@@ -47,12 +46,13 @@ ram.runtime = "50M"
     url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v1.6.2.tar.gz"
     sha256 = "77df61be1512aa359291bc657523c0aff18f4384e7da825a9ee0483aa7842feb"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
     [resources.install_dir]
-
+    group = "www-data:r-x"
+    
     [resources.permissions]
     main.url = "/"
 

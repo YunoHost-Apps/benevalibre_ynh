@@ -23,8 +23,6 @@ Bénévalibre est un logiciel libre qui facilite la gestion et la valorisation d
 
 **Version incluse :** 1.6.2~ynh1
 
-**Démo :** <https://demo.example.com>
-
 ## Captures d’écran
 
 ![Capture d’écran de Bénévalibre](./doc/screenshots/example.jpg)
@@ -33,7 +31,7 @@ Bénévalibre est un logiciel libre qui facilite la gestion et la valorisation d
 
 - Site officiel de l’app : <https://benevalibre.org/>
 - Documentation officielle utilisateur : <https://benevalibre.org/site/tutoriel-benevole/>
-- Dépôt de code officiel de l’app : <https://some.forge.com/example/example>
+- Dépôt de code officiel de l’app : <https://forge.cliss21.org/cliss21/benevalibre>
 - YunoHost Store : <https://apps.yunohost.org/app/benevalibre>
 - Signaler un bug : <https://github.com/YunoHost-Apps/benevalibre_ynh/issues>
 
