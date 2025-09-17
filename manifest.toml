@@ -7,7 +7,7 @@ name = "Bénévalibre"
 description.en = "Makes it easier to manage and promote voluntary work in associations"
 description.fr = "Facilite la gestion et la valorisation du bénévolat dans les associations"
 
-version = "1.6.2~ynh1"
+version = "2.0.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v1.6.2.tar.gz"
-    sha256 = "77df61be1512aa359291bc657523c0aff18f4384e7da825a9ee0483aa7842feb"
+    url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v2.0.0.tar.gz"
+    sha256 = "687090284bb59239c9e4f59895b455133e025a42bb50fefd92b9a2ccaf155c1d"
 
     autoupdate.strategy = "latest_forgejo_tag"
 
