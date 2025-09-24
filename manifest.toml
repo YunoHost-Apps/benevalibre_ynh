@@ -7,7 +7,7 @@ name = "Bénévalibre"
 description.en = "Makes it easier to manage and promote voluntary work in associations"
 description.fr = "Facilite la gestion et la valorisation du bénévolat dans les associations"
 
-version = "1.6.2~ynh1"
+version = "1.6.2~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -20,7 +20,7 @@ userdoc = "https://app.benevalibre.org/docs/utilisation/index.html"
 code = "https://forge.cliss21.org/cliss21/benevalibre"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -46,7 +46,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v1.6.2.tar.gz"
-    sha256 = "77df61be1512aa359291bc657523c0aff18f4384e7da825a9ee0483aa7842feb"
+    sha256 = "c5b652be21549cab44c6c197fc49a59eee46c675045c4f4c2bb63b44ec609b39"
 
     autoupdate.strategy = "latest_github_tag"
 
