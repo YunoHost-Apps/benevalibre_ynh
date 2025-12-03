@@ -37,9 +37,9 @@ ynh_script_progression "Installing $app..."
 pushd $install_dir
     python3 -m venv $install_dir/venv
     ynh_hide_warnings $install_dir/venv/bin/pip install benevalibre==$(ynh_app_upstream_version)
-    ynh_hide_warnings $install_dir/venv/bin/pip benevalibre migrate
-    ynh_hide_warnings $install_dir/venv/bin/pip benevalibre collectstatic
-    ynh_hide_warnings $install_dir/venv/bin/pip benevalibre createsuperuser
+    ynh_exec_as $app python -m benevalibre migrate
+    ynh_exec_as $app python -m benevalibre collectstatic
+    ynh_exec_as $app python -m benevalibre createsuperuser
 popd
 
 chown -R $app:www-data "$install_dir"
