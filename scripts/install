@@ -10,13 +10,6 @@ key=$(ynh_string_random --length=45 | base64)
 ynh_app_setting_set --key=key --value="$key"
 
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-ynh_script_progression "Setting up source files..."
-
-ynh_setup_source --dest_dir="$install_dir"
-
-#=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
@@ -43,7 +36,7 @@ ynh_script_progression "Installing $app..."
 
 pushd $install_dir
     python3 -m venv $install_dir/venv
-    ynh_hide_warnings $install_dir/venv/bin/pip install benevalibre
+    ynh_hide_warnings $install_dir/venv/bin/pip install benevalibre==$(ynh_app_upstream_version)
     ynh_hide_warnings $install_dir/venv/bin/pip benevalibre migrate
     ynh_hide_warnings $install_dir/venv/bin/pip benevalibre collectstatic
     ynh_hide_warnings $install_dir/venv/bin/pip benevalibre createsuperuser
