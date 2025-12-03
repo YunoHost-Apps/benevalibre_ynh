@@ -46,7 +46,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v2.0.0.tar.gz"
-    sha256 = "687090284bb59239c9e4f59895b455133e025a42bb50fefd92b9a2ccaf155c1d"
+    sha256 = "c8f1a57635b13165e5908bdf6f813832e98c4d2c62e553c9f343dd4a508e4ffd"
 
     autoupdate.strategy = "latest_forgejo_tag"
 
