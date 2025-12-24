@@ -40,7 +40,7 @@ pushd $install_dir
     ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary
     ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre migrate
     ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre collectstatic
-    ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre createsuperuser
+    #ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre createsuperuser
 popd
 
 chown -R $app:www-data "$install_dir"
