@@ -45,7 +45,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v1.6.2.tar.gz"
+    url = "https://github.com/YunoHost-Apps/benevalibre_ynh/releases/download/v1.6.2/v1.6.2.tar.gz"
     sha256 = "c5b652be21549cab44c6c197fc49a59eee46c675045c4f4c2bb63b44ec609b39"
 
     autoupdate.strategy = "latest_github_tag"
