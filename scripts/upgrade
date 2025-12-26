@@ -17,7 +17,7 @@ ynh_script_progression "Upgrading source files..."
 # ynh_setup_source --dest_dir="$install_dir" --keep="config.env"
 ynh_safe_rm "$install_dir/venv"
 
-if ynh_app_upgrading_from_version_before_or_equal_to 1.6.2~ynh1; then
+if ynh_app_upgrading_from_version_before_or_equal_to 1.6.2~ynh2; then
     ynh_script_progression "Cleaning up installation directory..."
     ynh_safe_rm "$install_dir"
     mkdir -p "$install_dir"
