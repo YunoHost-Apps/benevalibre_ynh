@@ -48,6 +48,7 @@ ram.runtime = "50M"
     url = "https://forge.cliss21.org/cliss21/benevalibre/archive/v2.0.1.tar.gz"
     sha256 = "7515bf959b73b956ceb967351c7e299cbb3668a53d35f9c770eb72e00d93ced6"
     autoupdate.strategy = "latest_gitea_tag"
+    prefetch = false
 
     [resources.system_user]
 
