@@ -20,6 +20,7 @@ ynh_safe_rm "$install_dir/venv"
 if ynh_app_upgrading_from_version_before_or_equal_to 1.6.2~ynh2; then
     ynh_script_progression "Cleaning up installation directory..."
     tmp_dir=/var/cache/yunohost/files_to_keep_during_setup_source/${YNH_APP_ID}
+    mkdir -p "$tmp_dir"
     mv "$install_dir/config.env" "$tmp_dir/"
     mv "$install_dir/var" "$tmp_dir/"
     ynh_safe_rm "$install_dir"
