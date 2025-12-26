@@ -45,7 +45,7 @@ pushd "$install_dir"
     ynh_hide_warnings $install_dir/venv/bin/pip install benevalibre==$(ynh_app_upstream_version) gunicorn
     ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary
     ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre migrate
-    ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre collectstatic
+    ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre collectstatic --clear --no-input
     # ynh_hide_warnings make update
 popd
 
