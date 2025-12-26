@@ -14,14 +14,15 @@ ynh_systemctl --service="$app" --action="stop"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --keep="config.env"
+# ynh_setup_source --dest_dir="$install_dir" --keep="config.env"
+ynh_safe_remove "$install_dir/venv"
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
 #ynh_script_progression "Updating $app's configuration files..."
 
-#ynh_config_add --template="config.env.example" --destination="$install_dir/config.env"
+ynh_config_add --template="config.env.example" --destination="$install_dir/config.env"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
@@ -40,6 +41,7 @@ yunohost service add "$app" --description="Manage and promote voluntary work in 
 ynh_script_progression "Installing $app..."
 
 pushd "$install_dir"
+    python3 -m venv $install_dir/venv
     ynh_hide_warnings $install_dir/venv/bin/pip install benevalibre==$(ynh_app_upstream_version) gunicorn
     ynh_hide_warnings $install_dir/venv/bin/pip install psycopg2-binary
     ynh_exec_as_app $install_dir/venv/bin/python3 -m benevalibre migrate
