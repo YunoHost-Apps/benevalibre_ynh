@@ -26,8 +26,8 @@ if ynh_app_upgrading_from_version_before_or_equal_to 1.6.2~ynh2; then
     mkdir -p "$install_dir"
     chown -R $app:www-data "$install_dir"
     chmod -R 750 "$install_dir"
-    mv "$tmp_dir/*" "$install_dir/"
-    yng_safe_rm "$tmp_dir"
+    mv $tmp_dir/* $install_dir/
+    ynh_safe_rm "$tmp_dir"
 fi
 
 #=================================================
