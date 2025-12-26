@@ -19,10 +19,15 @@ ynh_safe_rm "$install_dir/venv"
 
 if ynh_app_upgrading_from_version_before_or_equal_to 1.6.2~ynh2; then
     ynh_script_progression "Cleaning up installation directory..."
+    tmp_dir=$(mktemp -d)
+    mv "$install_dir/config.env" "$tmp_dir/"
+    mv "$install_dir/var" "$tmp_dir/"
     ynh_safe_rm "$install_dir"
     mkdir -p "$install_dir"
     chown -R $app:www-data "$install_dir"
     chmod -R 750 "$install_dir"
+    mv "$tmp_dir/*" "$install_dir/"
+    yng_safe_rm "$tmp_dir"
 fi
 
 #=================================================
